@@ -22,6 +22,8 @@ local capi = {
     screen = screen
 }
 
+local wdg = require("stacker.widget")
+
 module("stacker.stack")
 
 ------------------------------------------
@@ -83,9 +85,11 @@ stack = LinkList.new()
 function push(c)
     c.hidden = true
     stack:push(c)
+    wdg.update(stack)
 end
 
 function pop()
     c = stack:pop()
     c.hidden = false
+    wdg.update(stack)
 end

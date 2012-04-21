@@ -5,5 +5,6 @@
 ---------------------------------------------------------------
  
 require("stacker.stack")
+require("stacker.widget")
 
 module("stacker")
