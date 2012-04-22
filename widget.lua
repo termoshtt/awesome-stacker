@@ -15,10 +15,13 @@ function update (stack)
     end
 
     widget.text = "[HiddenWindows]"
+    local i = 0
     while link ~= nil do
         local c = link.value
         widget.text = widget.text .. "|" .. c.name
         link = link.next
+        i = i + 1
     end
+    widget.text = widget.text .. "[" .. i  .. "]"
 end
 
