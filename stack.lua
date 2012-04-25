@@ -53,6 +53,7 @@ function LinkList.new ()
                 self.last = link
             end
         end,
+        -- TODO create push_back for LIFO
         pop_back = function (self)
             local link = self.last
             if not link then

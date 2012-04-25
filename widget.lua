@@ -14,6 +14,7 @@ function update (stack)
         return nil
     end
 
+    -- TODO make this widget text configuable by clinet code(rc.lua)
     widget.text = "[HiddenWindows]"
     local i = 0
     while link ~= nil do
